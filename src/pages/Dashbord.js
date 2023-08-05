@@ -1,7 +1,9 @@
-export default function Dashbord() {
+import React from 'react'
+
+const Dashbord = () => {
   return (
-    <div>
-      This is Dashbord
-    </div>
+    <div>Dashbord</div>
   )
 }
+
+export default Dashbord

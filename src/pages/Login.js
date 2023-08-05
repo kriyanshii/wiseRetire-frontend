@@ -1,8 +1,8 @@
-function Login() {
+import React from 'react'
+
+const Login = () => {
   return (
-    <div>
-      This is login page
-    </div>
+    <div>Login</div>
   )
 }
 
