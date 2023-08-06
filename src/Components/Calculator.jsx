@@ -1,62 +1,86 @@
-import React from 'react'
+import React, { useState } from 'react'
+import money from '../images/money.jpeg'
 
 const Calculator = () => {
+  const [age, setAge] = useState(null);
+  const [retirementage, setRetirementage] = useState(null)
+  const [lifeAge, setLifeAge] = useState(null);
+  const [noInterestMoney, setnoInterestMoney] = useState(null)
+  const [inflation, setInflation] = useState(null);
+  const [valuewithInflation, setValuewithInflation] = useState(null);
+  const [withSevenInterest, setSevenInterest] = useState(null);
+  const [saving, setSaving] = useState(null)
+  
   return (
-    <form class="w-full my-auto mt-[5rem] mx-auto max-w-lg">
+    <div className='flex gap-2 w-screen justify-center items-center'>
+
+
+    <form class=" my-auto mt-[5rem] ml-12">
+      <h1 className='text-[2.2rem] underline mb-[3rem]' >Calculate your retirement money</h1>
   <div class="flex flex-wrap -mx-3 mb-6">
     <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
       <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
-        First Name
+        Your Current Age
       </label>
-      <input class="appearance-none block w-full bg-gray-200 text-gray-700  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane"/>
+      <input type="number" onChange={(e) => setAge(e.target.value)} class="appearance-none block w-full bg-gray-200 text-gray-700  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name"  placeholder="36"/>
+      
+    </div>
+    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+       Your Monthly savings
+      </label>
+      <input type="number" onChange={(e) => setSaving(e.target.value)} class="appearance-none block w-full bg-gray-200 text-gray-700  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name"  placeholder="36"/>
+      
+    </div>
+    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+       Your expected savings at the time of retirement
+      </label>
+      <input type="number"  class="appearance-none block w-full bg-gray-200 text-gray-700  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name"  placeholder="36"/>
       
     </div>
     <div class="w-full md:w-1/2 px-3">
       <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
-        Last Name
+        Your retirement age
       </label>
-      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe" />
+      <input onChange={(e) => setRetirementage(e.target.value)} class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name"  placeholder="60" />
     </div>
   </div>
   <div class="flex flex-wrap -mx-3 mb-6">
     <div class="w-full px-3">
       <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
-        Password
+       Your Life Expectancy
       </label>
-      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="text" placeholder="" />
+      <input onChange={(e) => setLifeAge(e.target.value)} class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="text" placeholder="85" />
 
     </div>
+
+    
   </div>
-  <div class="flex flex-wrap -mx-3 mb-2">
-    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
-        City
+  <div class="flex flex-wrap -mx-3 mb-6">
+    <div class="w-full px-3">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+       Inflation rate
       </label>
-      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" placeholder="Albuquerque"/>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="text" placeholder="6.65" />
+
     </div>
-    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
-        State
-      </label>
-      <div class="relative">
-        <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
-          <option>New Mexico</option>
-          <option>Missouri</option>
-          <option>Texas</option>
-        </select>
-        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-        </div>
-      </div>
-    </div>
-    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
-        Zip
-      </label>
-      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-zip" type="text" placeholder="90210"/>
-    </div>
+
+    
   </div>
+ <div className='flex flex-col gap-4'>
+      <p className='text-[1.5rem]'>Your total money by the time your retire without Investment: <span className='text-red-700'>Rs. {saving * 12 * (retirementage - age) }</span></p>
+      <p className='text-[1.5rem]'>Value of your money by the time you retire without investment(with 7% inflation rate): <span className='text-red-700'>Rs {(saving* 12) * Math.pow(0.03, (retirementage-age)) }</span></p>
+      <p className='text-[1.5rem]'>Your total money by the time your retire with FD/saving (assuming 8%): <span className='text-red-700'>Rs {(saving* 12) * Math.pow(1.08, (retirementage-age)) * 2 }</span></p>
+      <p className='text-[1.5rem]'>Your total money by the time your retire with  Investments like mutuals, schemes, etc (assuming 15%): <span className='text-red-700'>Rs {(saving* 12) * Math.pow(1.15, (retirementage-age)) * 4 }</span></p>
+ </div>
+
+ <div className='text-[2.5rem] mt-[5rem] mb-[5rem]'>Hence to reach your goal it's important to invest and not just keep it in your boxes</div>
 </form>
+<img className='ml-12' src={money}>
+</img>
+
+</div>
   )
 }
 
