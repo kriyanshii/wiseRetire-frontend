@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d3f76514.css",
+    "main.js": "/static/js/main.d2be2da3.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/finance.jpeg": "/static/media/finance.74e67f53936f9ed6084e.jpeg",
+    "static/media/logo.png": "/static/media/logo.480ded0d269e91fb7f49.png",
+    "static/media/money.jpeg": "/static/media/money.f739ed74d76f53e68f2d.jpeg",
+    "static/media/illustration-intro.svg": "/static/media/illustration-intro.cb9a8a9551ca99f99a125230d38a2c36.svg",
+    "index.html": "/index.html",
+    "static/media/icon-twitter.svg": "/static/media/icon-twitter.01a8907dd0beb126cff27d505c31be52.svg",
+    "static/media/icon-youtube.svg": "/static/media/icon-youtube.7d6960fbb0c4831f7c667012f0b102d2.svg",
+    "static/media/icon-facebook.svg": "/static/media/icon-facebook.1e9b33385e6dfe7a61acbff13373209c.svg",
+    "static/media/bg-tablet-pattern.svg": "/static/media/bg-tablet-pattern.b6990a984c7bcc142d3e.svg",
+    "main.d3f76514.css.map": "/static/css/main.d3f76514.css.map",
+    "main.d2be2da3.js.map": "/static/js/main.d2be2da3.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3f76514.css",
+    "static/js/main.d2be2da3.js"
+  ]
+}
