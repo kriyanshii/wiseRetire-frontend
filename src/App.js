@@ -6,22 +6,24 @@ import Register from "./pages/Register";
 import Main from "./pages/Main";
 import Plans from "./pages/Plans";
 import Mutuals from "./pages/Mutuals";
+import Chat from "./pages/Chat";
 
 function App() {
 	return (
 		<>
 			<Router>
-				<div className="container">
+			
 					<Routes>
-						<Route path="/" element={<Dashbord/>} />
-						<Route path="/login" element={<Login/>} />
-						<Route path="/register" element={<Register/>} />
+					
+
+						<Route path="/" element={<Register/>} />
 						<Route path="/auth" element={<Main/>}/>
 						<Route path='/schemes' element={<Plans/>} />
 						<Route path='/investments' element={<Mutuals/>} />
+						<Route path='/chat' element={<Chat/>} />
 
 					</Routes>
-				</div>
+			
 			</Router>
 		</>
 	);
