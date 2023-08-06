@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+## 💡 Inspiration💡
+- As being all women in our team, we came to a discussion about how women need to understand finance better.
+- We wanted to make our web app finfreedom since right knowledge about managing finances for women can help them achieve financial independence, equal opportunities, retirement planning, wealth accumulation which will enable women and other people be more confident about their investment choices, other than that they can achieve financial security, overcoming financial challenges and most importantly close the gender wealth gap.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## ⚙What does finfreedom do? ⚙️
+- FinFreedom empowers homemaker to make better financial choices by bringing aspects of all the government schemes, low to now risk investment plans.
+- Hence we've investment plans, government schemes and a retirement calculator all in one place.
 
-In the project directory, you can run:
+## 🐝 How we built it 🐝
+- We built it using ➖
+  Auth0 Integration for Google authorisation.
+  ReactjS for frontend development 
+  APIs: we created them by ourselves to fetch all mutual funds and investment plans.
 
-### `npm start`
+## 🚩 Challenges we ran into
+- We faced integration with the CapitalOne API as it wasn't creating customers so ultimately we had to give up the idea of it and make it available to everyone.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🥇 Accomplishment(s) that we're proud of
+- Our main achivement was to add support as API. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📚 What we learned
+- During our research for the app, we learned about women and there challenges around financial freedom.
+- We learned more advanced concepts around APIs.
 
-### `npm test`
+## ⏳ What's next for TechHive?
+- We plan to integrate more features like community and support, more user-friendly interface since there are many people who aren't as well-versed with technology.
+- We also want to integrate more languages other than English to it can be delievered to a wider spectrum of audience.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
